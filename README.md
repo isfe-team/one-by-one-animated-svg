@@ -1,5 +1,7 @@
 # @isfe/one-by-one-animated-svg
 
+A simple one-by-one animation for svg.
+
 ## Author
 
 [@bqliu](https://github.com/bq-hentai)
