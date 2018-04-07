@@ -1,5 +1,5 @@
 {
-  "name": "one-by-one-animated-svg",
+  "name": "@isfe/one-by-one-animated-svg",
   "version": "0.1.0",
   "description": "A one-by-one animated svg, using css animation and variable",
   "main": "dist/animation.umd.js",
