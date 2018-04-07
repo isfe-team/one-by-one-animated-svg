@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      .st0 {
+        fill:#FFFFFF;
+      }
+      path {
+        stroke: #000;
+        fill: none;
+      }
+
+      @keyframes animated-svg-dash {
+        100% {
+          stroke-dasharray: var(--s-length) 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 100.4 96.1" style="enable-background:new 0 0 54.2 46.1;" xml:space="preserve">
+      <rect x="18.2" y="5.5" class="st0" width="54.7" height="49.7"/>
+      <g>
+        <path d="M15.4,19.8c0,0-5.2-4.8-12.8,2.5L0.3,25c0,0-1.2,1.4,0.9,0.8c2.1-0.6,8.3-0.3,10.9,4.8c2.6,5.1,12.5,14,24,6.7
+		c11.5-7.3,18.6,1.2,18.6,1.2s1.6,0.6-0.5-1.6c-2.2-2.2-8.8-7.2-17.5-2c-8.7,5.1-17.3,4.5-24.5-6.5c0,0-2.5-4.6-8.7-4.7
+		c0,0,5.9-5.8,11.5-3.3C15.1,20.3,17.2,21.6,15.4,19.8z" stroke-width="1px"/>
+      	<path d="M25.4,0.4c0,0,1.1,2.7-3.8,5.4C17,8.4,13,17.6,21.6,22.2c0,0,0.5,0.4,0.2-0.5c-0.3-1,2-10.1,9.2-10.8c0,0,3-0.3,4.7,0
+      		c1.7,0.3,6.8,1.3,9.4-4.5c0,0,0.4-1.3-0.1-0.5c-0.6,0.8-2.7,3.7-9.5,3c-6.8-0.8-13.6,1.6-15,10.4c0,0-5.2-6,2-11.9
+      		c0,0,0.9-0.7,1.9-1.3c0.6-0.4,3.3-2.7,1.4-5.6C25.7,0.3,25.1-0.4,25.4,0.4z" stroke-width="1px"/>
+      	<path d="M38.5,14.1c0,0,3.9-1.2,5.3-3.8c0,0,0.7-0.8,0.7,0c0,0.8-2.1,4.9-5.7,4.2C38.8,14.5,38.2,14.1,38.5,14.1z"  stroke-width="1px"/>
+      	<path d="M41.7,14.6c0,0-1.8,2.5-4.8,3.4c0,0-0.4,0.2,0.1,0.4c0.5,0.2,4,0.2,5.1-3.4C42.1,15,42.3,14.1,41.7,14.6z"  stroke-width="1px"/>
+      	<path d="M39,19c0,0-2.3,1.9-4.3,2.1c0,0-1,0.2,0.1,0.7c1.2,0.5,3.7-0.7,4.8-2.6C39.6,19.3,39.4,18.5,39,19z"  stroke-width="1px"/>
+      </g>
+      <path d="M34.7,27.8c0,0-0.6,1.8-1.6,2.5c0,0-0.5,0.4,0.3,0.4c0.8-0.1,1.8-1.5,1.7-2.9C35.1,27.7,34.8,27.4,34.7,27.8z"  stroke-width="1px" stroke="red" fill="none"/>
+      <path d="M52.3,46.1c0,0-1.9-1.7-3.8-1.6c0,0-0.7-0.1-0.2-0.4c0.5-0.3,3.4-0.5,4.1,1.7C52.5,45.8,52.4,46.3,52.3,46.1z"  stroke-width="1px" stroke="red" fill="none"/>
+    </svg>
+  </body>
+  <script type="text/javascript" src="./dist/animation.umd.js"></script>
+  <script type="text/javascript">
+    window.onload = function() {
+      $$animatedSvg(document.querySelector('#Layer_1'), {
+        mode: 'linear',
+        time: 0.05
+      })
+    }
+  </script>
+</html>

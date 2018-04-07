@@ -1,0 +1,26 @@
+{
+  "name": "one-by-one-animated-svg",
+  "version": "0.1.0",
+  "description": "A one-by-one animated svg, using css animation and variable",
+  "main": "dist/animation.umd.js",
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "rollup -c -w",
+    "build": "rollup -c",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fe-sm/one-by-one-animated-svg.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fe-sm/one-by-one-animated-svg/issues"
+  },
+  "homepage": "https://github.com/fe-sm/one-by-one-animated-svg#readme",
+  "devDependencies": {
+    "rollup": "^0.57.1",
+    "rollup-plugin-buble": "^0.19.2"
+  }
+}
