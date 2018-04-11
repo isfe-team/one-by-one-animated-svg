@@ -27,14 +27,14 @@ Then call it with a svg dom and some configurations.
 ```javascript
 $$animatedSvg(document.querySelector('#Layer_1'), {
   mode: 'linear', // types of `linear` or `static`
-  time: 0.05, // meens `speed` or `duration`
+  time: 0.05, // means `speed` or `duration`
   animationName: 'anime'
 })
 ```
 
 ### Install
 
-Wait me to publish it.
+Wait until us to publish it.
 
 ## Note
 
