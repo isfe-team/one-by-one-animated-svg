@@ -6,10 +6,10 @@ const modes = {
 const defaultTime = 0
 
 const defaultProperties = {
-  'stroke-dasharray': '0 var(--s-length)',
+  'stroke-dasharray': 'var(--s-length)',
   'stroke-dashoffset': 'var(--s-length)',
   'animation-duration': '0s',
-  'animation-name': 'animated-svg-dash',
+  'animation-name': '',
   'animation-timing-function': 'linear',
   'animation-delay': '0s',
   'animation-fill-mode': 'forwards',
@@ -25,13 +25,13 @@ const setPathAnimationProperties = function (pathDOM, properties = { }) {
   ))
 }
 
-export default function (svgDOM, { mode = modes.STATIC, time = defaultTime } = { }) {
+export default function (svgDOM, { mode = modes.STATIC, time = defaultTime, animationName = 'animated-svg-dash' } = { }) {
   const paths = svgDOM.querySelectorAll('path')
   let delay = 0
   for (let i = 0; i < paths.length; ++i) {
     const p = paths[i], len = p.getTotalLength()
     let animationDuration = time
-    let animationDelay = delay
+    const animationDelay = delay
     if (mode === modes.STATIC) {
       delay += time
     } else {
@@ -39,6 +39,7 @@ export default function (svgDOM, { mode = modes.STATIC, time = defaultTime } = {
       delay += animationDuration
     }
     setPathAnimationProperties(p, {
+      'animation-name': animationName,
       'animation-duration': animationDuration + 's',
       'animation-delay': animationDelay + 's',
       '--s-index': i,

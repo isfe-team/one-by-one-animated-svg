@@ -16,10 +16,10 @@
   var defaultTime = 0;
 
   var defaultProperties = {
-    'stroke-dasharray': '0 var(--s-length)',
+    'stroke-dasharray': 'var(--s-length)',
     'stroke-dashoffset': 'var(--s-length)',
     'animation-duration': '0s',
-    'animation-name': 'animated-svg-dash',
+    'animation-name': '',
     'animation-timing-function': 'linear',
     'animation-delay': '0s',
     'animation-fill-mode': 'forwards',
@@ -41,6 +41,7 @@
     if ( ref === void 0 ) ref = { };
     var mode = ref.mode; if ( mode === void 0 ) mode = modes.STATIC;
     var time = ref.time; if ( time === void 0 ) time = defaultTime;
+    var animationName = ref.animationName; if ( animationName === void 0 ) animationName = 'animated-svg-dash';
 
     var paths = svgDOM.querySelectorAll('path');
     var delay = 0;
@@ -55,6 +56,7 @@
         delay += animationDuration;
       }
       setPathAnimationProperties(p, {
+        'animation-name': animationName,
         'animation-duration': animationDuration + 's',
         'animation-delay': animationDelay + 's',
         '--s-index': i,
